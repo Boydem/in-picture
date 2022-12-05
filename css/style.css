@@ -1,0 +1,78 @@
+body,
+body *{
+    transition: 0.3s all;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: translateX(-20px);
+    color: white;
+    font-size: 100px;
+}
+.instructions{
+    position: absolute;
+    top: 76px;
+    left: 60px;
+    transform: translateX(-20px);
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+}
+.start-game-btn{
+    transition: 0.3s all;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #e9e9e9;
+    box-shadow: 0px 10px 20px -10px black;
+}
+.start-game-btn:hover{
+    background-color: white;
+    color: black;
+}
+.page-wrapper{
+    transition: 0.3s all;
+    height: calc(100vh - 40px);
+    background-image:radial-gradient(circle at 50%,rgb(37, 37, 37),black) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 20px;
+}
+.game-wrapper{
+    transition: 0.3s all;
+    display: none;
+}
+.game-wrapper img{
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px;
+}
+.game-wrapper ul li{
+    transition: 0.3s all;
+text-align: center;
+list-style: none;
+margin-top: 20px;
+font-size: 30px;
+background-color: #e9e9e9;
+border-radius: 5px;
+padding: 10px;
+}
+.game-wrapper ul li:hover{
+    transition: 0.3s all;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px -10px black;
+}
+.game-won-msg{
+    margin-bottom: 20px;
+    display: none;
+    color: white;
+}
