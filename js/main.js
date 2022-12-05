@@ -26,7 +26,7 @@ function initGame() {
 function renderQuestion() {
     const elGameWrapper = document.querySelector('.game-wrapper')
     var strHTML = `
-    <img src="/imgs/${gCurrQuestIdx+1}.jpg">
+    <img src="imgs/${gCurrQuestIdx+1}.jpg">
     <ul>
     <li data-opt-idx="0" onclick="onOptClicked(this)">${gQuests[gCurrQuestIdx].opts[0]}</li>
     <li data-opt-idx="1" onclick="onOptClicked(this)">${gQuests[gCurrQuestIdx].opts[1]}</li>
